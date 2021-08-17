@@ -1,0 +1,19 @@
+{
+  "name": "mmm-wordsofaffirmation",
+  "version": "1.0.0",
+  "description": "Magic mirror module that displays random words of affirmations everyday",
+  "main": "MMM-WordsOfAffirmation.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TavianT/MMM-WordsOfAffirmation.git"
+  },
+  "author": "Tavian Taylor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TavianT/MMM-WordsOfAffirmation/issues"
+  },
+  "homepage": "https://github.com/TavianT/MMM-WordsOfAffirmation#readme"
+}
