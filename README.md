@@ -7,6 +7,26 @@ A Magic Mirror Module that will display new words of affirmation daily
 3. Navigate to newly created folder `MMM-WordsOfAffirmation`
 4. Execute `npm install`
 
+## Using the module
+
+To use this module, add it to the modules array in the `config/config.js` file:
+````javascript
+modules: [
+	{
+		module: 'MMM-WordsOfAffirmation',
+		position: 'lower_third',	// This can be any of the regions. Best result is in the lower_third imo
+		config: {
+			version: 'ESV', // This can be changed to any of ['ESV','NIV','KJV','NKJV']
+			interval: 24 * 60 * 60 * 1000,  // in milliseconds, default is 24 * 60 * 60 * 1000 which is 1 day.
+	    size: 'large' // default value is medium, but can be changed.
+		}
+	}
+]
+````
+
+## Dependencies
+No external dependancies needed
+
 The MIT License (MIT)
 =====================
 
