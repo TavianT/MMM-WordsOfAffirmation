@@ -10,7 +10,7 @@ const affirmations = require("./affirmations.js")
 
 Module.register("MMM-WordsOfAffirmation", {
     default:  {
-        updateInterval: 12 * 60 * 60 * 1000, //every day
+        updateInterval: 24 * 60 * 60 * 1000, //every day
         fadeSpeed: 3000,
         initialLoadDelay: 1250,
         retryDelay: 2500
