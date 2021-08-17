@@ -30,7 +30,7 @@ No external dependancies needed
 The MIT License (MIT)
 =====================
 
-Copyright © 2021 Mordecai Veldt
+Copyright © 2021 Tavian Taylor
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
