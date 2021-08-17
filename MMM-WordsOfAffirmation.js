@@ -6,7 +6,7 @@
  * By Tavian Taylor
  */
 
-const affirmations = require("./affirmations.js")
+//const affirmations = require("./affirmations.js")
 
 Module.register("MMM-WordsOfAffirmation", {
     default:  {
@@ -20,9 +20,18 @@ Module.register("MMM-WordsOfAffirmation", {
         return ["MMM-WordsOfAffirmation.css"];
     },
 
+    getScripts: function() {
+        return [this.file("affirmations.js")];
+    },
+
     start: function() {
-        Log.info("Starting module: " + this.name);
+        Log.warn("Starting module: " + this.name);
         this.affirmation = ""
+        Log.warn("Affirmation: " + this.affirmation);
+        setTimeout(() => {
+            this.getAffirmation()
+            this.updateDom()
+        }, this.default.initialLoadDelay)
         this.scheduleUpdate()
     },
 
@@ -52,11 +61,14 @@ Module.register("MMM-WordsOfAffirmation", {
     scheduleUpdate: function() {
         setInterval(() => {
             this.getAffirmation()
+            this.updateDom()
         }, this.config.updateInterval)
 
     },
 
     getAffirmation: function() {
         this.affirmation = affirmations[Math.floor(Math.random() * affirmations.length)]
+        Log.warn("Affirmation: " + this.affirmation);
+        //this.updateDom
     }
 })

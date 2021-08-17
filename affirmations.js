@@ -50,5 +50,3 @@ affirmations = [
     "Chop life, don't let life chop you",
     "I can't come and kill myself"
   ];
-
-  module.exports = affirmations
